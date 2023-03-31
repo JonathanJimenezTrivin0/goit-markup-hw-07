@@ -85,7 +85,7 @@ ul {
 
 /* Styles header */
 
-.header__contact__tel {
+.header__container {
   display: flex;
 }
 
@@ -143,24 +143,24 @@ ul {
 
 /* Styles header contact */
 
-.header__contact {
+.contact {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   margin-left: auto;
 }
 
-.header__contact__list {
+.contact__list {
   margin-right: 30px;
   transition-duration: 250ms;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header__contact__list:hover {
+.contact__list:hover {
   fill: #2196f3;
 }
 
-.header__contact__link {
+.contact__link {
   font-family: 'Roboto';
   font-weight: 500;
   font-size: 14px;
@@ -172,23 +172,23 @@ ul {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header__contact__link.header__contact__link--current {
+.contact__link.contact__link--current {
   color: #757575;
 }
 
-.header__contact__link:hover,
-.header__contact__link:focus {
+.contact__link:hover,
+.contact__link:focus {
   color: #2196f3;
 }
 
 /* Styles header icons*/
-.header__icon__contact {
+.contact__icon {
   margin-right: 10px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Styles main */
-.main__photo {
+.hero {
   background-image: url(../images/imágen\ de\ fondo.jpg);
   padding-top: 200px;
   padding-bottom: 200px;
@@ -196,7 +196,7 @@ ul {
   background-position: center;
 }
 
-.main__photo__title {
+.hero__title {
   color: #ffffff;
   font-weight: 900;
   font-size: 44px;
@@ -308,7 +308,7 @@ ul {
   height: 294px;
 }
 
-.services__card__footer {
+.services__footer {
   color: #ffffff;
   font-family: 'Roboto';
   font-weight: 700;
@@ -366,7 +366,7 @@ ul {
   cursor: pointer;
 }
 
-.team__card__footer {
+.team__footer {
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -391,13 +391,13 @@ ul {
   font-family: 'Roboto';
 }
 
-.team__icon__list {
+.team__svg {
   display: flex;
 }
 
 /* Styles icon social media */
 
-.team__icon__networks {
+.team__link {
   width: 44px;
   height: 44px;
   margin-top: 11px;
@@ -409,11 +409,11 @@ ul {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team__icon__networks:hover {
+.team__link:hover {
   fill: #ffffff;
 }
 
-.team__icon__networks--circle:hover {
+.team__link--circle:hover {
   border-radius: 50%;
   background-color: #2196f3;
 }
@@ -440,7 +440,7 @@ ul {
   flex-basis: calc((100% - 150px) / 6);
 }
 
-.customers__icon {
+.customers__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -458,7 +458,7 @@ ul {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customers__icon:hover {
+.customers__link:hover {
   fill: #2196f3;
   border: 2px solid #2196f3;
 }
@@ -473,7 +473,7 @@ ul {
   text-decoration: none;
 }
 
-.container__footer {
+.footer {
   background: #2f303a;
   padding: 60px;
 }
@@ -487,7 +487,7 @@ ul {
   display: flex;
 }
 
-.footer__margin {
+.footer__container {
   margin-left: 0;
   margin-bottom: 0;
 }
@@ -563,7 +563,7 @@ ul {
 
 /* Footer form*/
 
-.footer__container__form {
+.footer__button {
   margin-top: 10px;
   margin-left: 75px;
 }
@@ -573,11 +573,11 @@ ul {
   margin-top: 20px;
 }
 
-.footer__form__label {
+.footer__label {
   margin-right: 12px;
 }
 
-.footer__form__input {
+.footer__input {
   width: 358px;
   height: 50px;
   font-weight: 400;
@@ -594,13 +594,13 @@ ul {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer__form__input:focus,
-.footer__form__input:hover {
+.footer__input:focus,
+.footer__input:hover {
   border-color: #2196f3;
   outline: none;
 }
 
-.btn__icon__button {
+.footer__svg {
   margin-left: 10px;
 }
 
@@ -644,7 +644,7 @@ ul {
 
 /* Style Icon modal*/
 
-.modal__close__icon {
+.modal__close {
   position: absolute;
   width: 30px;
   height: 30px;
@@ -658,11 +658,11 @@ ul {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__close__icon:hover {
+.modal__close:hover {
   fill: #2196f3;
 }
 
-.modal__icon__contact {
+.modal__svg {
   position: absolute;
   left: 15px;
   top: 50%;
@@ -670,16 +670,11 @@ ul {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__input__person:focus + .modal__icon__contact,
-.modal__input__person:hover + .modal__icon__contact {
-  fill: #2196f3;
-}
-
-.modal__icon__person {
+.modal__icon {
   position: relative;
 }
 
-.modal__button__submit {
+.modal__submit {
   display: flex;
   justify-content: center;
   position: relative;
@@ -697,11 +692,11 @@ ul {
   text-align: center;
 }
 
-.modal__form__name {
+.modal__container {
   margin-top: 12px;
 }
 
-.modal__form__label {
+.modal__label {
   color: #757575;
   font-weight: 400;
   font-size: 12px;
@@ -712,7 +707,7 @@ ul {
   display: block;
 }
 
-.modal__input__person {
+.modal__input {
   width: 448px;
   height: 40px;
   padding: 11px 11px 11px 41px;
@@ -722,10 +717,15 @@ ul {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__input__person:focus,
-.modal__input__person:hover {
+.modal__input:focus,
+.modal__input:hover {
   border-color: #2196f3;
   outline: none;
+}
+
+.modal__input:focus + .modal__svg,
+.modal__input:hover + .modal__svg {
+  fill: #2196f3;
 }
 
 .modal__commet {
@@ -772,7 +772,7 @@ ul {
   height: 15px;
 }
 
-.modal__validation__checkbox {
+.checkbox__validation {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -783,7 +783,7 @@ ul {
 
 /* Icon checkbox modal*/
 
-.checkbox-icon-container {
+.checkbox {
   margin-right: 7px;
   margin-top: 5px;
   margin-left: 10px;
@@ -800,12 +800,12 @@ ul {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__checked:checked + .checkbox-icon-container {
+.modal__checked:checked + .checkbox {
   border-color: #2196f3;
   background-color: #2196f3;
 }
 
-.modal__checked:focus + .checkbox-icon-container {
+.modal__checked:focus + .checkbox {
   border-color: #2196f3;
   background-color: #2196f3;
 }
@@ -823,7 +823,7 @@ ul {
   border: 1px solid #ececec;
 }
 
-.portfolio__nav__list {
+.portfolio__list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -832,7 +832,7 @@ ul {
   border-radius: 4px;
 }
 
-.portfolio__nav__list__button {
+.portfolio__nav {
   color: #212121;
   background-color: #f5f4fa;
   border-radius: 4px;
@@ -843,46 +843,47 @@ ul {
     1px 4px 6px rgba(0, 0, 0, 0.16);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio__nav__list__button:focus,
-.portfolio__nav__list__button:hover {
+.portfolio__nav:focus,
+.portfolio__nav:hover {
   color: #ffffff;
   background-color: #2196f3;
 }
 
 /* Cards portfolio */
 
-.portfolio__card {
+.cards {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.portfolio__card__item {
+.card__item {
   flex-basis: calc((100% - 60px) / 4);
 }
 
-.portfolio__card__link:hover .overlay,
-.portfolio__card__link:focus .overlay {
+.card__link:hover .card__overlay,
+.card__link:focus .card__overlay {
   transform: translateY(0%);
 }
 
-.portfolio__card__images {
+.card__image {
   background: #ffffff;
   border: 1px solid #eeeeee;
   position: relative;
   overflow: hidden;
 }
 
-.portfolio__card__images:hover {
+.card__image:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
 }
 
-.overlay {
+.card__overlay {
   color: #ffffff;
   position: absolute;
   top: 0;
@@ -898,17 +899,17 @@ ul {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio__card__footer {
+.card__footer {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   cursor: pointer;
 }
-.portfolio__card__footer:hover {
+.card__footer:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio__proyect {
+.card__proyect {
   color: #212121;
   font-family: 'Roboto';
   font-weight: 700;
@@ -917,7 +918,7 @@ ul {
   letter-spacing: 0.06px;
 }
 
-.portfolio__proyect__application {
+.card__paragraph {
   color: #757575;
   font-family: 'Roboto';
   font-weight: 400;
