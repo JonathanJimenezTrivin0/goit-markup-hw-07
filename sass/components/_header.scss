@@ -1,0 +1,115 @@
+// Logo header
+.logo {
+  color: $color-primary;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  text-decoration: none;
+  padding-bottom: 25px;
+  padding-top: 24px;
+  margin-right: 93px;
+}
+
+//Styles header
+.header {
+  .header__container {
+    display: flex;
+  }
+  .header__nav {
+    display: flex;
+    align-items: center;
+  }
+  .header__navigation {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .header__list {
+    margin-right: 50px;
+    position: relative;
+  }
+
+  &__link--current::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    top: 45px;
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    background-color: $color-primary;
+    border-radius: 2px;
+  }
+}
+
+.header__link {
+  color: $color-titles;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  padding-bottom: 32px;
+  padding-top: 32px;
+  transition: color 250ms $cubic;
+
+  &:hover,
+  &:focus {
+    color: $color-primary;
+  }
+}
+.header__link.header__link--current {
+  color: $color-primary;
+}
+
+/* Styles header contact */
+
+.contact {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: auto;
+
+  &__list:hover {
+    fill: $color-primary;
+  }
+
+  .contact__list {
+    margin-right: 30px;
+    transition-duration: 250ms;
+    transition: color 250ms $cubic;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $color-primary;
+  }
+
+  &__link--current {
+    color: $color-detail;
+  }
+
+  .contact__link {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    padding-bottom: 32px;
+    padding-top: 32px;
+    display: flex;
+    align-items: center;
+    transition: color 250ms $cubic;
+  }
+}
+
+// Styles header icons
+.contact__icon {
+  margin-right: 10px;
+  transition: fill 250ms $cubic;
+}
+
+// Styles Portfolio
+.header__portfolio {
+  border: 1px solid #ececec;
+}
